@@ -1,4 +1,4 @@
-def ReverseAdd(In_Num):
+def ReversePlus(In_Num):
     Sum = 0
     n = 0
     for i in In_Num:
@@ -12,17 +12,17 @@ def ReverseAdd(In_Num):
     return Sum
 
 def test():
-    assert(ReverseAdd("9283746182763") == "12,956,562,656,592")
-    assert(ReverseAdd("78991i33") == "err")
-    assert(ReverseAdd("9178563") == "12,837,282")
-    assert(ReverseAdd("392876 ") == "err")
+    assert(ReversePlus("9283746182763") == "12,956,562,656,592")
+    assert(ReversePlus("78991i33") == "err")
+    assert(ReversePlus("9178563") == "12,837,282")
+    assert(ReversePlus("392876 ") == "err")
 
 def main():
     test()
     while 1:
         In_Num = input()
         if In_Num:
-            print(ReverseAdd(In_Num))
+            print(ReversePlus(In_Num))
         else:
             break
 
