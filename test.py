@@ -1,21 +1,11 @@
-def Thousands(Num):
-  NumOut = []
-  '''
-  实现千分位
-  '''
-  n = 0
-  while 1:
-    if Num < 1000:
-      NumOut.append(Num)
-      break
-    else:
-      NumOut.append(Num % 1000)
-      NumOut.append(",")
-      Num = Num // 1000
-  NumOut = NumOut[::-1]
-  for i in range(0, len(NumOut)):
-    NumOut[i] = str(NumOut[i])
-  return "".join(NumOut)
-
-while 1:
-  print(Thousands(int(input())))
+v1 = [x for x in range( -5, +10, 2)]
+v2 = "".join([chr(ord('a')+x)for x in range(0, 26)] )
+print("v1:", v1)
+print("v2:", v2)
+print(v1[0:5])
+print(v1[-6:-1])
+print(v1[-1:-6:-2])
+print(v2[::])
+print(v2[::-5])
+print(v2[::-1])
+print(v2[:-5:7])
