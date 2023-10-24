@@ -11,3 +11,41 @@
 (4) (i//10) % 10
 (5) gw+sw (6) 1
 (7) sum
+
+
+5-1
+(1) -5 
+(2) 2
+(3) x in range(0,26)
+(4) 0:5
+(5) -1
+(6) -6
+(7) -2
+(8) ::
+(9) -5
+(10) -1
+(11) 7
+
+5-2
+(1) m,n = map(int,input().split())
+(2) print(courses[m-1][n-1])
+
+5-3
+(1) ','
+(2) set
+(3) b.sort()
+
+5-4
+(1) False
+(2) contact in contacts
+(3) contact["name"] == name
+
+5-5
+(1) print([(key,Value) for key,Value in D.items()])
+(2) print(D.get("phone"))
+(3) D["address"] = "Shanghai"
+(4) D.update({"age": 20})
+(5) del D["sex"]
+(6) "name" in D
+(7) Key,Value in D.items()
+(8) print(Key,Value)

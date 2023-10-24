@@ -1,11 +1,10 @@
-v1 = [x for x in range( -5, +10, 2)]
-v2 = "".join([chr(ord('a')+x)for x in range(0, 26)] )
-print("v1:", v1)
-print("v2:", v2)
-print(v1[0:5])
-print(v1[-6:-1])
-print(v1[-1:-6:-2])
-print(v2[::])
-print(v2[::-5])
-print(v2[::-1])
-print(v2[:-5:7])
+Input_str = input()
+List1 = [Name.strip() for Name in Input_str.split(',')]
+Dict = {}
+for Name in List1:
+    if Name in Dict:
+        Dict[Name] += 1
+    else:
+        Dict.update({Name: 1})
+for Name, Count in Dict.items():
+    print(f"{Name}:{Count}")
