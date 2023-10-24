@@ -1,6 +1,5 @@
 import random
 
-
 def guessNumber(Guess ,Number):
     if Guess:
         if Guess < Number:
@@ -22,9 +21,8 @@ def Gaming():
             break
         Guess = int(input("Take a guess: "))
         
-
 def main():
     Gaming()
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     main()
