@@ -1,10 +1,10 @@
-Input_str = input()
-List1 = [Name.strip() for Name in Input_str.split(',')]
-Dict = {}
-for Name in List1:
-    if Name in Dict:
-        Dict[Name] += 1
-    else:
-        Dict.update({Name: 1})
-for Name, Count in Dict.items():
-    print(f"{Name}:{Count}")
+mylist = ["张红","女","计算机"]
+num = input() #输入学号
+mylist.append(num)
+ymd = eval(input())
+mylist.append(list(ymd))
+courses = eval(input()) 
+mylist.append(list(courses))
+x = mylist.pop(1)
+print(mylist)
+print("{}性别{}、今年{}岁、学号{}、体育{}分".format(mylist[0], x, (2022 - int(mylist[3][0])), mylist[2], mylist[4][2]))

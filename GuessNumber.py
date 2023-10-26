@@ -1,5 +1,6 @@
 import random
 
+
 def guessNumber(Guess ,Number):
     if Guess:
         if Guess < Number:
