@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import platform
-from rich.progress import track
+import tqdm
 
 urlzhihu = "https://www.zhihu.com/question/63610436/answer/2986716866"
 urlzhihuHtml = requests.get(urlzhihu)
@@ -13,7 +13,7 @@ for i in range(6, 78 , 3):
 ID_list = ("".join(ID_list)).split("id=")
 ID_list.pop(0)
 
-for ID in track(ID_list):
+for ID in tqdm.tqdm(ID_list):
     url = 'https://www.pixiv.net/artworks/%d' %int(ID)
     urlhtml=requests.get(url)
     urlhtml.encoding = "utf-8"
