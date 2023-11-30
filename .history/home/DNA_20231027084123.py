@@ -8,6 +8,7 @@ def translateDna(dnaStr):
         else:
             return "非DNA数据"
     return "".join(rnaStr)
+
 def main ():
     dnaStr = input()
     rnaStr = translateDna(dnaStr)
@@ -15,5 +16,6 @@ def main ():
         print(rnaStr)
     else:
         print(f"{dnaStr}=>{rnaStr}")
+
 if __name__ == "__main__":
     main ()

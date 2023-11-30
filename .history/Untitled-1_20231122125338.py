@@ -7,7 +7,6 @@ def main():
     content = r.text
 
     rel = etree.HTML(content).xpath("//a[@class='pages_flip'][last()]")
-    next_page = rel[0].get("href")
-    for e in rel:
-        print(e.text)
+    next_page = rel[0].get["href"]
+    print(rel)
     print(next_page)
