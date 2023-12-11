@@ -17,7 +17,7 @@ class Crawler():
     if os.path.exists(self.cache_filename):
       with open(self.cache_filename, 'rb') as f:
         self.page_cache = pickle.load(f)
-    else:
+    else:d
       self.page_cache = {}
 
   def saveCache(self):

@@ -1,0 +1,12 @@
+def main():
+    k = eval(input())
+    List = []
+    List.append(0)
+    List.append(2)
+    List.append(List[1] + List[1] + 1)
+    for i in range (3, k + 1):
+        List.append(List[2] * 2 + List[i - 2])
+    print(List[3] % 998244353)
+if __name__ == '__main__':
+  main() 
+        
